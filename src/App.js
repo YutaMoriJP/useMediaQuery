@@ -7,8 +7,8 @@ import Globalstyle from "./GlobalStyles";
 import Text from "./Text";
 import Code from "./Code";
 import styled from "styled-components";
-import Sandbox from "./Sandbox";
-import "./styles.css";
+
+//import Sandbox from "./Sandbox";
 
 const Wrapper = styled.article`
   display: flex;
@@ -25,8 +25,7 @@ export default function App() {
         Tablet={TabletMenu}
         options={menuOption}
       />
-      <Sandbox>CodeSandbox</Sandbox>
-
+      {/* <Sandbox>CodeSandbox</Sandbox> */}
       <Wrapper>
         <Text>
           Re-size your window to see the UI update and how{" "}
