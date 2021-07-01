@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import matchmedia from "matchmedia-polyfill";
 
 //don't return the mediaQuery object!
 //calling setState WILL re-render the function
@@ -8,7 +9,7 @@ import { useState, useEffect } from "react";
 
 //@params - query: string - must be a media query like (min-width:300px) or (max-width:500px)
 const useMediaQuery = query => {
-  const mql = window.matchMedia(query);
+  const mql = "matchMedia" in window ? window.matchMedia(query) : matchmedia;
   const [mediaQuery, setMediaQuery] = useState(mql.matches);
   useEffect(() => {
     const onChange = () => setMediaQuery(mql.matches);
