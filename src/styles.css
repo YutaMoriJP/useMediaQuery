@@ -1,0 +1,25 @@
+
+.sandbox {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 5px;
+    padding: 0;
+  }
+  
+  .sandbox a {
+    background: #364fc7;
+    padding: 5px;
+    text-decoration: 0;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  .sandbox a:hover {
+    text-decoration: underline;
+  }
+  
+  .sandbox a:active {
+    transform: scale(0.9);
+  }
+  
